@@ -7,4 +7,4 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{"animejs":"tMTn"}],"H99C":[function(require,module,exports) {
 "use strict";require("./styles.scss");var e=require("./animation"),n=1080,t=1920,i=2e3,a=0,o=0,s=function(){var e=document.getElementById("main");if(e){var i=e.getBoundingClientRect(),s=i.width,c=i.height,r=0,d=0;s/c<n/t?(r=s,d=s*t/n):(r=c*n/t,d=c),document.getElementById("screen").style="width: ".concat(r,"px; height: ").concat(d,"px"),o=d,a=r}};window.addEventListener("resize",s),s();var c=new e.Animation(a,o);c.createAnimation(i,"hello");var r=function(){c.play()},d=function(e){c.seek(e)},u=function(){c.pause()},l=function(){c.stop()},m=function(e){c.updateControls(e)};window.addEventListener("message",function(e){var n=e.data,t=n.frame,i=n.action,a=n.controls;console.log(e.data),t&&d(t),"play"===i&&r(),"pause"===i&&u(),"stop"===i&&l(),a&&m(a)});
 },{"./styles.scss":"aiJW","./animation":"IxTk"}]},{},["H99C"], null)
-//# sourceMappingURL=/csb-8m7f0e/src.432ed08a.js.map
+//# sourceMappingURL=/csb-8m7f0e/src.f3a36afc.js.map
